@@ -1,0 +1,173 @@
+✅ BackgroundColor
+BackgroundImage
+BackgroundPositionX
+BackgroundPositionY
+BackgroundRepeat
+BackgroundAttachment
+BackgroundClip
+BackgroundOrigin
+BackgroundSize
+✅ BorderTopColor
+✅ BorderTopStyle
+✅ BorderTopWidth
+✅ BorderLeftColor
+✅ BorderLeftStyle
+✅ BorderLeftWidth
+✅ BorderBottomColor
+✅ BorderBottomStyle
+✅ BorderBottomWidth
+✅ BorderRightColor
+✅ BorderRightStyle
+✅ BorderRightWidth
+BorderBlockStartColor
+BorderBlockStartStyle
+BorderBlockStartWidth
+BorderBlockEndColor
+BorderBlockEndStyle
+BorderBlockEndWidth
+BorderInlineStartColor
+BorderInlineStartStyle
+BorderInlineStartWidth
+BorderInlineEndColor
+BorderInlineEndStyle
+BorderInlineEndWidth
+⚠️ BorderTopLeftRadius
+⚠️ BorderTopRightRadius
+⚠️ BorderBottomRightRadius
+⚠️ BorderBottomLeftRadius
+BorderImageSource
+BorderImageOutset
+BorderImageRepeat
+BorderImageWidth
+BorderImageSlice
+✅ Display
+✅ Position
+Float
+Clear
+ServoDisplayForHypotheticalBox
+VerticalAlign
+ServoOverflowClipBox
+✅ OverflowX
+✅ OverflowY
+TransitionDuration
+TransitionTimingFunction
+TransitionProperty
+TransitionDelay
+AnimationName
+AnimationDuration
+AnimationTimingFunction
+AnimationIterationCount
+AnimationDirection
+AnimationPlayState
+AnimationFillMode
+AnimationDelay
+Transform
+Perspective
+PerspectiveOrigin
+BackfaceVisibility
+TransformStyle
+TransformOrigin
+✅ Color
+ColumnWidth
+ColumnCount
+ColumnGap
+Content
+CounterIncrement
+CounterReset
+✅ Opacity
+✅ BoxShadow
+⚠️ Clip
+⚠️ Filter
+⚠️ MixBlendMode
+✅ FontFamily
+✅ FontStyle
+✅ FontVariantCaps
+✅ FontWeight
+✅ FontSize
+✅ FontStretch
+✅ Visibility
+WritingMode
+Direction
+ImageRendering
+BorderCollapse
+EmptyCells
+CaptionSide
+BorderSpacing
+LineHeight
+TextTransform
+TextIndent
+OverflowWrap
+WordBreak
+TextJustify
+TextAlign
+LetterSpacing
+WordSpacing
+ServoTextDecorationsInEffect
+WhiteSpace
+✅ TextShadow
+TextRendering
+ListStylePosition
+ListStyleType
+ListStyleImage
+Quotes
+✅ MarginTop
+✅ MarginLeft
+✅ MarginBottom
+✅ MarginRight
+MarginBlockStart
+MarginBlockEnd
+MarginInlineStart
+MarginInlineEnd
+⚠️ OutlineColor
+⚠️ OutlineStyle
+⚠️ OutlineWidth
+⚠️ OutlineOffset
+✅ PaddingTop
+✅ PaddingLeft
+✅ PaddingBottom
+✅ PaddingRight
+PaddingBlockStart
+PaddingBlockEnd
+PaddingInlineStart
+PaddingInlineEnd
+✅ Cursor
+PointerEvents
+✅ Top
+✅ Left
+✅ Bottom
+✅ Right
+OffsetBlockStart
+OffsetBlockEnd
+OffsetInlineStart
+OffsetInlineEnd
+⚠️ ZIndex
+✅ FlexDirection
+✅ FlexWrap
+✅ JustifyContent
+✅ AlignContent
+✅ AlignItems
+✅ FlexGrow
+✅ FlexShrink
+✅ AlignSelf
+Order
+✅ FlexBasis
+✅ Width
+✅ MinWidth
+✅ MaxWidth
+✅ Height
+✅ MinHeight
+✅ MaxHeight
+BlockSize
+MinBlockSize
+MaxBlockSize
+InlineSize
+MinInlineSize
+MaxInlineSize
+BoxSizing
+TableLayout
+TextOverflow
+UnicodeBidi
+TextDecorationLine
+CSSWideKeyword
+WithVariables
+Custom
