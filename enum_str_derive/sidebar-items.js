@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["self_tokenize",""],["self_tokenize_camel_case",""],["self_tokenize_kebab_case",""],["self_tokenize_mixed_case",""],["self_tokenize_shouty_snake_case",""],["self_tokenize_snake_case",""],["self_tokenize_title_case",""]]});

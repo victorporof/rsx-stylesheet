@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `ComputedStyles` struct in crate `rsx_stylesheet`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, ComputedStyles">
+
+    <title>rsx_stylesheet::types::ComputedStyles - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Struct ComputedStyles</p><div class="block items"><a class="sidebar-title" href="#fields">Fields</a><div class="sidebar-links"><a href="#structfield.border_bottom_width">border_bottom_width</a><a href="#structfield.border_left_width">border_left_width</a><a href="#structfield.border_right_width">border_right_width</a><a href="#structfield.border_top_width">border_top_width</a><a href="#structfield.background_color">background_color</a><a href="#structfield.opacity">opacity</a><a href="#structfield.border_bottom_color">border_bottom_color</a><a href="#structfield.border_bottom_style">border_bottom_style</a><a href="#structfield.border_left_color">border_left_color</a><a href="#structfield.border_left_style">border_left_style</a><a href="#structfield.border_right_color">border_right_color</a><a href="#structfield.border_right_style">border_right_style</a><a href="#structfield.border_top_color">border_top_color</a><a href="#structfield.border_top_style">border_top_style</a><a href="#structfield.box_shadows">box_shadows</a><a href="#structfield.cursor">cursor</a><a href="#structfield.color">color</a><a href="#structfield.text_shadows">text_shadows</a><a href="#structfield.font_names">font_names</a><a href="#structfield.font_style">font_style</a><a href="#structfield.font_caps">font_caps</a><a href="#structfield.font_weight">font_weight</a><a href="#structfield.font_size">font_size</a><a href="#structfield.font_stretch">font_stretch</a><a href="#structfield.visibility">visibility</a></div><a class="sidebar-title" href="#implementations">Trait Implementations</a><div class="sidebar-links"><a href="#impl-Debug">Debug</a><a href="#impl-PartialEq">PartialEq</a><a href="#impl-Clone">Clone</a><a href="#impl-Default">Default</a><a href="#impl-TComputedStyles">TComputedStyles</a><a href="#impl-TInheritedStyles">TInheritedStyles</a></div></div><p class='location'><a href='../index.html'>rsx_stylesheet</a>::<wbr><a href='index.html'>types</a></p><script>window.sidebarCurrent = {name: 'ComputedStyles', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>rsx_stylesheet</a>::<wbr><a href='index.html'>types</a>::<wbr><a class="struct" href=''>ComputedStyles</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/rsx_stylesheet/computed_styles/types.rs.html#41-74' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct ComputedStyles {
+    pub border_bottom_width: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>,
+    pub border_left_width: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>,
+    pub border_right_width: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>,
+    pub border_top_width: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>,
+    pub background_color: <a class="struct" href="../../rsx_stylesheet/types/struct.Color.html" title="struct rsx_stylesheet::types::Color">Color</a>,
+    pub opacity: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a>,
+    pub border_bottom_color: <a class="struct" href="../../rsx_stylesheet/types/struct.Color.html" title="struct rsx_stylesheet::types::Color">Color</a>,
+    pub border_bottom_style: <a class="enum" href="../../rsx_stylesheet/types/enum.BorderStyle.html" title="enum rsx_stylesheet::types::BorderStyle">BorderStyle</a>,
+    pub border_left_color: <a class="struct" href="../../rsx_stylesheet/types/struct.Color.html" title="struct rsx_stylesheet::types::Color">Color</a>,
+    pub border_left_style: <a class="enum" href="../../rsx_stylesheet/types/enum.BorderStyle.html" title="enum rsx_stylesheet::types::BorderStyle">BorderStyle</a>,
+    pub border_right_color: <a class="struct" href="../../rsx_stylesheet/types/struct.Color.html" title="struct rsx_stylesheet::types::Color">Color</a>,
+    pub border_right_style: <a class="enum" href="../../rsx_stylesheet/types/enum.BorderStyle.html" title="enum rsx_stylesheet::types::BorderStyle">BorderStyle</a>,
+    pub border_top_color: <a class="struct" href="../../rsx_stylesheet/types/struct.Color.html" title="struct rsx_stylesheet::types::Color">Color</a>,
+    pub border_top_style: <a class="enum" href="../../rsx_stylesheet/types/enum.BorderStyle.html" title="enum rsx_stylesheet::types::BorderStyle">BorderStyle</a>,
+    pub box_shadows: <a class="type" href="../../rsx_stylesheet/types/type.InlineBoxShadows.html" title="type rsx_stylesheet::types::InlineBoxShadows">InlineBoxShadows</a>,
+    pub cursor: <a class="enum" href="../../rsx_stylesheet/types/enum.Cursor.html" title="enum rsx_stylesheet::types::Cursor">Cursor</a>,
+    pub color: <a class="struct" href="../../rsx_stylesheet/types/struct.Color.html" title="struct rsx_stylesheet::types::Color">Color</a>,
+    pub text_shadows: <a class="type" href="../../rsx_stylesheet/types/type.InlineTextShadows.html" title="type rsx_stylesheet::types::InlineTextShadows">InlineTextShadows</a>,
+    pub font_names: <a class="type" href="../../rsx_stylesheet/types/type.InlineFontNames.html" title="type rsx_stylesheet::types::InlineFontNames">InlineFontNames</a>,
+    pub font_style: <a class="enum" href="../../rsx_stylesheet/types/enum.FontStyle.html" title="enum rsx_stylesheet::types::FontStyle">FontStyle</a>,
+    pub font_caps: <a class="enum" href="../../rsx_stylesheet/types/enum.FontCaps.html" title="enum rsx_stylesheet::types::FontCaps">FontCaps</a>,
+    pub font_weight: <a class="enum" href="../../rsx_stylesheet/types/enum.FontWeight.html" title="enum rsx_stylesheet::types::FontWeight">FontWeight</a>,
+    pub font_size: <a class="enum" href="../../rsx_stylesheet/types/enum.FontSize.html" title="enum rsx_stylesheet::types::FontSize">FontSize</a>,
+    pub font_stretch: <a class="enum" href="../../rsx_stylesheet/types/enum.FontStretch.html" title="enum rsx_stylesheet::types::FontStretch">FontStretch</a>,
+    pub visibility: <a class="enum" href="../../rsx_stylesheet/types/enum.Visibility.html" title="enum rsx_stylesheet::types::Visibility">Visibility</a>,
+}</pre><h2 id='fields' class='fields small-section-header'>
+                       Fields<a href='#fields' class='anchor'></a></h2><span id="structfield.border_bottom_width" class="structfield small-section-header">
+                           <a href="#structfield.border_bottom_width" class="anchor field"></a>
+                           <span id="border_bottom_width.v" class='invisible'>
+                           <code>border_bottom_width: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a></code>
+                           </span></span><span id="structfield.border_left_width" class="structfield small-section-header">
+                           <a href="#structfield.border_left_width" class="anchor field"></a>
+                           <span id="border_left_width.v" class='invisible'>
+                           <code>border_left_width: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a></code>
+                           </span></span><span id="structfield.border_right_width" class="structfield small-section-header">
+                           <a href="#structfield.border_right_width" class="anchor field"></a>
+                           <span id="border_right_width.v" class='invisible'>
+                           <code>border_right_width: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a></code>
+                           </span></span><span id="structfield.border_top_width" class="structfield small-section-header">
+                           <a href="#structfield.border_top_width" class="anchor field"></a>
+                           <span id="border_top_width.v" class='invisible'>
+                           <code>border_top_width: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a></code>
+                           </span></span><span id="structfield.background_color" class="structfield small-section-header">
+                           <a href="#structfield.background_color" class="anchor field"></a>
+                           <span id="background_color.v" class='invisible'>
+                           <code>background_color: <a class="struct" href="../../rsx_stylesheet/types/struct.Color.html" title="struct rsx_stylesheet::types::Color">Color</a></code>
+                           </span></span><span id="structfield.opacity" class="structfield small-section-header">
+                           <a href="#structfield.opacity" class="anchor field"></a>
+                           <span id="opacity.v" class='invisible'>
+                           <code>opacity: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a></code>
+                           </span></span><span id="structfield.border_bottom_color" class="structfield small-section-header">
+                           <a href="#structfield.border_bottom_color" class="anchor field"></a>
+                           <span id="border_bottom_color.v" class='invisible'>
+                           <code>border_bottom_color: <a class="struct" href="../../rsx_stylesheet/types/struct.Color.html" title="struct rsx_stylesheet::types::Color">Color</a></code>
+                           </span></span><span id="structfield.border_bottom_style" class="structfield small-section-header">
+                           <a href="#structfield.border_bottom_style" class="anchor field"></a>
+                           <span id="border_bottom_style.v" class='invisible'>
+                           <code>border_bottom_style: <a class="enum" href="../../rsx_stylesheet/types/enum.BorderStyle.html" title="enum rsx_stylesheet::types::BorderStyle">BorderStyle</a></code>
+                           </span></span><span id="structfield.border_left_color" class="structfield small-section-header">
+                           <a href="#structfield.border_left_color" class="anchor field"></a>
+                           <span id="border_left_color.v" class='invisible'>
+                           <code>border_left_color: <a class="struct" href="../../rsx_stylesheet/types/struct.Color.html" title="struct rsx_stylesheet::types::Color">Color</a></code>
+                           </span></span><span id="structfield.border_left_style" class="structfield small-section-header">
+                           <a href="#structfield.border_left_style" class="anchor field"></a>
+                           <span id="border_left_style.v" class='invisible'>
+                           <code>border_left_style: <a class="enum" href="../../rsx_stylesheet/types/enum.BorderStyle.html" title="enum rsx_stylesheet::types::BorderStyle">BorderStyle</a></code>
+                           </span></span><span id="structfield.border_right_color" class="structfield small-section-header">
+                           <a href="#structfield.border_right_color" class="anchor field"></a>
+                           <span id="border_right_color.v" class='invisible'>
+                           <code>border_right_color: <a class="struct" href="../../rsx_stylesheet/types/struct.Color.html" title="struct rsx_stylesheet::types::Color">Color</a></code>
+                           </span></span><span id="structfield.border_right_style" class="structfield small-section-header">
+                           <a href="#structfield.border_right_style" class="anchor field"></a>
+                           <span id="border_right_style.v" class='invisible'>
+                           <code>border_right_style: <a class="enum" href="../../rsx_stylesheet/types/enum.BorderStyle.html" title="enum rsx_stylesheet::types::BorderStyle">BorderStyle</a></code>
+                           </span></span><span id="structfield.border_top_color" class="structfield small-section-header">
+                           <a href="#structfield.border_top_color" class="anchor field"></a>
+                           <span id="border_top_color.v" class='invisible'>
+                           <code>border_top_color: <a class="struct" href="../../rsx_stylesheet/types/struct.Color.html" title="struct rsx_stylesheet::types::Color">Color</a></code>
+                           </span></span><span id="structfield.border_top_style" class="structfield small-section-header">
+                           <a href="#structfield.border_top_style" class="anchor field"></a>
+                           <span id="border_top_style.v" class='invisible'>
+                           <code>border_top_style: <a class="enum" href="../../rsx_stylesheet/types/enum.BorderStyle.html" title="enum rsx_stylesheet::types::BorderStyle">BorderStyle</a></code>
+                           </span></span><span id="structfield.box_shadows" class="structfield small-section-header">
+                           <a href="#structfield.box_shadows" class="anchor field"></a>
+                           <span id="box_shadows.v" class='invisible'>
+                           <code>box_shadows: <a class="type" href="../../rsx_stylesheet/types/type.InlineBoxShadows.html" title="type rsx_stylesheet::types::InlineBoxShadows">InlineBoxShadows</a></code>
+                           </span></span><span id="structfield.cursor" class="structfield small-section-header">
+                           <a href="#structfield.cursor" class="anchor field"></a>
+                           <span id="cursor.v" class='invisible'>
+                           <code>cursor: <a class="enum" href="../../rsx_stylesheet/types/enum.Cursor.html" title="enum rsx_stylesheet::types::Cursor">Cursor</a></code>
+                           </span></span><span id="structfield.color" class="structfield small-section-header">
+                           <a href="#structfield.color" class="anchor field"></a>
+                           <span id="color.v" class='invisible'>
+                           <code>color: <a class="struct" href="../../rsx_stylesheet/types/struct.Color.html" title="struct rsx_stylesheet::types::Color">Color</a></code>
+                           </span></span><span id="structfield.text_shadows" class="structfield small-section-header">
+                           <a href="#structfield.text_shadows" class="anchor field"></a>
+                           <span id="text_shadows.v" class='invisible'>
+                           <code>text_shadows: <a class="type" href="../../rsx_stylesheet/types/type.InlineTextShadows.html" title="type rsx_stylesheet::types::InlineTextShadows">InlineTextShadows</a></code>
+                           </span></span><span id="structfield.font_names" class="structfield small-section-header">
+                           <a href="#structfield.font_names" class="anchor field"></a>
+                           <span id="font_names.v" class='invisible'>
+                           <code>font_names: <a class="type" href="../../rsx_stylesheet/types/type.InlineFontNames.html" title="type rsx_stylesheet::types::InlineFontNames">InlineFontNames</a></code>
+                           </span></span><span id="structfield.font_style" class="structfield small-section-header">
+                           <a href="#structfield.font_style" class="anchor field"></a>
+                           <span id="font_style.v" class='invisible'>
+                           <code>font_style: <a class="enum" href="../../rsx_stylesheet/types/enum.FontStyle.html" title="enum rsx_stylesheet::types::FontStyle">FontStyle</a></code>
+                           </span></span><span id="structfield.font_caps" class="structfield small-section-header">
+                           <a href="#structfield.font_caps" class="anchor field"></a>
+                           <span id="font_caps.v" class='invisible'>
+                           <code>font_caps: <a class="enum" href="../../rsx_stylesheet/types/enum.FontCaps.html" title="enum rsx_stylesheet::types::FontCaps">FontCaps</a></code>
+                           </span></span><span id="structfield.font_weight" class="structfield small-section-header">
+                           <a href="#structfield.font_weight" class="anchor field"></a>
+                           <span id="font_weight.v" class='invisible'>
+                           <code>font_weight: <a class="enum" href="../../rsx_stylesheet/types/enum.FontWeight.html" title="enum rsx_stylesheet::types::FontWeight">FontWeight</a></code>
+                           </span></span><span id="structfield.font_size" class="structfield small-section-header">
+                           <a href="#structfield.font_size" class="anchor field"></a>
+                           <span id="font_size.v" class='invisible'>
+                           <code>font_size: <a class="enum" href="../../rsx_stylesheet/types/enum.FontSize.html" title="enum rsx_stylesheet::types::FontSize">FontSize</a></code>
+                           </span></span><span id="structfield.font_stretch" class="structfield small-section-header">
+                           <a href="#structfield.font_stretch" class="anchor field"></a>
+                           <span id="font_stretch.v" class='invisible'>
+                           <code>font_stretch: <a class="enum" href="../../rsx_stylesheet/types/enum.FontStretch.html" title="enum rsx_stylesheet::types::FontStretch">FontStretch</a></code>
+                           </span></span><span id="structfield.visibility" class="structfield small-section-header">
+                           <a href="#structfield.visibility" class="anchor field"></a>
+                           <span id="visibility.v" class='invisible'>
+                           <code>visibility: <a class="enum" href="../../rsx_stylesheet/types/enum.Visibility.html" title="enum rsx_stylesheet::types::Visibility">Visibility</a></code>
+                           </span></span>
+            <h2 id='implementations' class='small-section-header'>
+              Trait Implementations<a href='#implementations' class='anchor'></a>
+            </h2>
+        <h3 id='impl-Debug' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="../../rsx_stylesheet/types/struct.ComputedStyles.html" title="struct rsx_stylesheet::types::ComputedStyles">ComputedStyles</a></code><a href='#impl-Debug' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_stylesheet/computed_styles/types.rs.html#40' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class="method"><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class="struct" href="https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html" title="struct core::fmt::Formatter">Formatter</a>) -&gt; <a class="type" href="https://doc.rust-lang.org/nightly/core/fmt/type.Result.html" title="type core::fmt::Result">Result</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_stylesheet/computed_styles/types.rs.html#40' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Formats the value using the given formatter. <a href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt">Read more</a></p>
+</div></div><h3 id='impl-PartialEq' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html" title="trait core::cmp::PartialEq">PartialEq</a> for <a class="struct" href="../../rsx_stylesheet/types/struct.ComputedStyles.html" title="struct rsx_stylesheet::types::ComputedStyles">ComputedStyles</a></code><a href='#impl-PartialEq' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_stylesheet/computed_styles/types.rs.html#40' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.eq' class="method"><span id='eq.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq' class='fnname'>eq</a>(&amp;self, __arg_0: &amp;<a class="struct" href="../../rsx_stylesheet/types/struct.ComputedStyles.html" title="struct rsx_stylesheet::types::ComputedStyles">ComputedStyles</a>) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_stylesheet/computed_styles/types.rs.html#40' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>This method tests for <code>self</code> and <code>other</code> values to be equal, and is used by <code>==</code>. <a href="https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq">Read more</a></p>
+</div><h4 id='method.ne' class="method"><span id='ne.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.ne' class='fnname'>ne</a>(&amp;self, __arg_0: &amp;<a class="struct" href="../../rsx_stylesheet/types/struct.ComputedStyles.html" title="struct rsx_stylesheet::types::ComputedStyles">ComputedStyles</a>) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_stylesheet/computed_styles/types.rs.html#40' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>This method tests for <code>!=</code>.</p>
+</div></div><h3 id='impl-Clone' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html" title="trait core::clone::Clone">Clone</a> for <a class="struct" href="../../rsx_stylesheet/types/struct.ComputedStyles.html" title="struct rsx_stylesheet::types::ComputedStyles">ComputedStyles</a></code><a href='#impl-Clone' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_stylesheet/computed_styles/types.rs.html#40' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.clone' class="method"><span id='clone.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class="struct" href="../../rsx_stylesheet/types/struct.ComputedStyles.html" title="struct rsx_stylesheet::types::ComputedStyles">ComputedStyles</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_stylesheet/computed_styles/types.rs.html#40' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Returns a copy of the value. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#tymethod.clone">Read more</a></p>
+</div><h4 id='method.clone_from' class="method"><span id='clone_from.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;</a>Self)</code></span><span class='out-of-band'><div class='ghost'></div><div class='since' title='Stable since Rust version 1.0.0'>1.0.0</div><a class='srclink' href='https://doc.rust-lang.org/nightly/src/core/clone.rs.html#112-114' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Performs copy-assignment from <code>source</code>. <a href="https://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from">Read more</a></p>
+</div></div><h3 id='impl-Default' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html" title="trait core::default::Default">Default</a> for <a class="struct" href="../../rsx_stylesheet/types/struct.ComputedStyles.html" title="struct rsx_stylesheet::types::ComputedStyles">ComputedStyles</a></code><a href='#impl-Default' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_stylesheet/computed_styles/types.rs.html#40' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.default' class="method"><span id='default.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default' class='fnname'>default</a>() -&gt; <a class="struct" href="../../rsx_stylesheet/types/struct.ComputedStyles.html" title="struct rsx_stylesheet::types::ComputedStyles">ComputedStyles</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_stylesheet/computed_styles/types.rs.html#40' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Returns the &quot;default value&quot; for a type. <a href="https://doc.rust-lang.org/nightly/core/default/trait.Default.html#tymethod.default">Read more</a></p>
+</div></div><h3 id='impl-TComputedStyles' class='impl'><span class='in-band'><code>impl <a class="trait" href="../../rsx_shared/traits/style_traits/trait.TComputedStyles.html" title="trait rsx_shared::traits::style_traits::TComputedStyles">TComputedStyles</a> for <a class="struct" href="../../rsx_stylesheet/types/struct.ComputedStyles.html" title="struct rsx_stylesheet::types::ComputedStyles">ComputedStyles</a></code><a href='#impl-TComputedStyles' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_stylesheet/computed_styles/types.rs.html#76-205' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='associatedtype.BackgroundColor' class="type"><span id='BackgroundColor.t' class='invisible'><code>type <a href='../../rsx_shared/traits/style_traits/trait.TComputedStyles.html#associatedtype.BackgroundColor' class="type">BackgroundColor</a> = <a class="struct" href="../../rsx_stylesheet/types/struct.Color.html" title="struct rsx_stylesheet::types::Color">Color</a></code></span></h4>
+<h4 id='associatedtype.Opacity' class="type"><span id='Opacity.t' class='invisible'><code>type <a href='../../rsx_shared/traits/style_traits/trait.TComputedStyles.html#associatedtype.Opacity' class="type">Opacity</a> = <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a></code></span></h4>
+<h4 id='associatedtype.BorderSize' class="type"><span id='BorderSize.t' class='invisible'><code>type <a href='../../rsx_shared/traits/style_traits/trait.TComputedStyles.html#associatedtype.BorderSize' class="type">BorderSize</a> = <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u32.html">u32</a></code></span></h4>
+<h4 id='associatedtype.BorderColor' class="type"><span id='BorderColor.t' class='invisible'><code>type <a href='../../rsx_shared/traits/style_traits/trait.TComputedStyles.html#associatedtype.BorderColor' class="type">BorderColor</a> = <a class="struct" href="../../rsx_stylesheet/types/struct.Color.html" title="struct rsx_stylesheet::types::Color">Color</a></code></span></h4>
+<h4 id='associatedtype.BorderStyle' class="type"><span id='BorderStyle.t' class='invisible'><code>type <a href='../../rsx_shared/traits/style_traits/trait.TComputedStyles.html#associatedtype.BorderStyle' class="type">BorderStyle</a> = <a class="enum" href="../../rsx_stylesheet/types/enum.BorderStyle.html" title="enum rsx_stylesheet::types::BorderStyle">BorderStyle</a></code></span></h4>
+<h4 id='associatedtype.BoxShadow' class="type"><span id='BoxShadow.t' class='invisible'><code>type <a href='../../rsx_shared/traits/style_traits/trait.TComputedStyles.html#associatedtype.BoxShadow' class="type">BoxShadow</a> = <a class="struct" href="../../rsx_stylesheet/types/struct.BoxShadow.html" title="struct rsx_stylesheet::types::BoxShadow">BoxShadow</a></code></span></h4>
+<h4 id='method.make_initial_computed_styles' class="method"><span id='make_initial_computed_styles.v' class='invisible'><code>fn <a href='../../rsx_shared/traits/style_traits/trait.TComputedStyles.html#tymethod.make_initial_computed_styles' class='fnname'>make_initial_computed_styles</a>&lt;T&gt;(_: T) -&gt; Self <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;T: <a class="trait" href="https://doc.rust-lang.org/nightly/core/convert/trait.TryInto.html" title="trait core::convert::TryInto">TryInto</a>&lt;<a class="enum" href="../../rsx_shared/types/dom_types/enum.KnownElementName.html" title="enum rsx_shared::types::dom_types::KnownElementName">KnownElementName</a>&gt;,&nbsp;</span></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_stylesheet/computed_styles/types.rs.html#84-96' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.reset_custom_styles' class="method"><span id='reset_custom_styles.v' class='invisible'><code>fn <a href='../../rsx_shared/traits/style_traits/trait.TComputedStyles.html#tymethod.reset_custom_styles' class='fnname'>reset_custom_styles</a>&lt;T&gt;(&amp;mut self, tag: T) <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;T: <a class="trait" href="https://doc.rust-lang.org/nightly/core/convert/trait.TryInto.html" title="trait core::convert::TryInto">TryInto</a>&lt;<a class="enum" href="../../rsx_shared/types/dom_types/enum.KnownElementName.html" title="enum rsx_shared::types::dom_types::KnownElementName">KnownElementName</a>&gt;,&nbsp;</span></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_stylesheet/computed_styles/types.rs.html#98-103' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.apply_styles' class="method"><span id='apply_styles.v' class='invisible'><code>fn <a href='../../rsx_shared/traits/style_traits/trait.TComputedStyles.html#tymethod.apply_styles' class='fnname'>apply_styles</a>(&amp;mut self, styles: &amp;Self::<a class="type" href="../../rsx_shared/traits/style_traits/trait.TInheritedStyles.html#associatedtype.Styles" title="type rsx_shared::traits::style_traits::TInheritedStyles::Styles">Styles</a>)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_stylesheet/computed_styles/types.rs.html#105-144' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.background_color' class="method"><span id='background_color.v-1' class='invisible'><code>fn <a href='../../rsx_shared/traits/style_traits/trait.TComputedStyles.html#tymethod.background_color' class='fnname'>background_color</a>(&amp;self) -&gt; Self::<a class="type" href="../../rsx_shared/traits/style_traits/trait.TComputedStyles.html#associatedtype.BackgroundColor" title="type rsx_shared::traits::style_traits::TComputedStyles::BackgroundColor">BackgroundColor</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_stylesheet/computed_styles/types.rs.html#146-148' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.opacity' class="method"><span id='opacity.v-1' class='invisible'><code>fn <a href='../../rsx_shared/traits/style_traits/trait.TComputedStyles.html#tymethod.opacity' class='fnname'>opacity</a>(&amp;self) -&gt; Self::<a class="type" href="../../rsx_shared/traits/style_traits/trait.TComputedStyles.html#associatedtype.Opacity" title="type rsx_shared::traits::style_traits::TComputedStyles::Opacity">Opacity</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_stylesheet/computed_styles/types.rs.html#150-152' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.border_bottom_width' class="method"><span id='border_bottom_width.v-1' class='invisible'><code>fn <a href='../../rsx_shared/traits/style_traits/trait.TComputedStyles.html#tymethod.border_bottom_width' class='fnname'>border_bottom_width</a>(&amp;self) -&gt; Self::<a class="type" href="../../rsx_shared/traits/style_traits/trait.TComputedStyles.html#associatedtype.BorderSize" title="type rsx_shared::traits::style_traits::TComputedStyles::BorderSize">BorderSize</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_stylesheet/computed_styles/types.rs.html#154-156' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.border_bottom_color' class="method"><span id='border_bottom_color.v-1' class='invisible'><code>fn <a href='../../rsx_shared/traits/style_traits/trait.TComputedStyles.html#tymethod.border_bottom_color' class='fnname'>border_bottom_color</a>(&amp;self) -&gt; Self::<a class="type" href="../../rsx_shared/traits/style_traits/trait.TComputedStyles.html#associatedtype.BorderColor" title="type rsx_shared::traits::style_traits::TComputedStyles::BorderColor">BorderColor</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_stylesheet/computed_styles/types.rs.html#158-160' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.border_bottom_style' class="method"><span id='border_bottom_style.v-1' class='invisible'><code>fn <a href='../../rsx_shared/traits/style_traits/trait.TComputedStyles.html#tymethod.border_bottom_style' class='fnname'>border_bottom_style</a>(&amp;self) -&gt; Self::<a class="type" href="../../rsx_shared/traits/style_traits/trait.TComputedStyles.html#associatedtype.BorderStyle" title="type rsx_shared::traits::style_traits::TComputedStyles::BorderStyle">BorderStyle</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_stylesheet/computed_styles/types.rs.html#162-164' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.border_left_width' class="method"><span id='border_left_width.v-1' class='invisible'><code>fn <a href='../../rsx_shared/traits/style_traits/trait.TComputedStyles.html#tymethod.border_left_width' class='fnname'>border_left_width</a>(&amp;self) -&gt; Self::<a class="type" href="../../rsx_shared/traits/style_traits/trait.TComputedStyles.html#associatedtype.BorderSize" title="type rsx_shared::traits::style_traits::TComputedStyles::BorderSize">BorderSize</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_stylesheet/computed_styles/types.rs.html#166-168' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.border_left_color' class="method"><span id='border_left_color.v-1' class='invisible'><code>fn <a href='../../rsx_shared/traits/style_traits/trait.TComputedStyles.html#tymethod.border_left_color' class='fnname'>border_left_color</a>(&amp;self) -&gt; Self::<a class="type" href="../../rsx_shared/traits/style_traits/trait.TComputedStyles.html#associatedtype.BorderColor" title="type rsx_shared::traits::style_traits::TComputedStyles::BorderColor">BorderColor</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_stylesheet/computed_styles/types.rs.html#170-172' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.border_left_style' class="method"><span id='border_left_style.v-1' class='invisible'><code>fn <a href='../../rsx_shared/traits/style_traits/trait.TComputedStyles.html#tymethod.border_left_style' class='fnname'>border_left_style</a>(&amp;self) -&gt; Self::<a class="type" href="../../rsx_shared/traits/style_traits/trait.TComputedStyles.html#associatedtype.BorderStyle" title="type rsx_shared::traits::style_traits::TComputedStyles::BorderStyle">BorderStyle</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_stylesheet/computed_styles/types.rs.html#174-176' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.border_right_width' class="method"><span id='border_right_width.v-1' class='invisible'><code>fn <a href='../../rsx_shared/traits/style_traits/trait.TComputedStyles.html#tymethod.border_right_width' class='fnname'>border_right_width</a>(&amp;self) -&gt; Self::<a class="type" href="../../rsx_shared/traits/style_traits/trait.TComputedStyles.html#associatedtype.BorderSize" title="type rsx_shared::traits::style_traits::TComputedStyles::BorderSize">BorderSize</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_stylesheet/computed_styles/types.rs.html#178-180' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.border_right_color' class="method"><span id='border_right_color.v-1' class='invisible'><code>fn <a href='../../rsx_shared/traits/style_traits/trait.TComputedStyles.html#tymethod.border_right_color' class='fnname'>border_right_color</a>(&amp;self) -&gt; Self::<a class="type" href="../../rsx_shared/traits/style_traits/trait.TComputedStyles.html#associatedtype.BorderColor" title="type rsx_shared::traits::style_traits::TComputedStyles::BorderColor">BorderColor</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_stylesheet/computed_styles/types.rs.html#182-184' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.border_right_style' class="method"><span id='border_right_style.v-1' class='invisible'><code>fn <a href='../../rsx_shared/traits/style_traits/trait.TComputedStyles.html#tymethod.border_right_style' class='fnname'>border_right_style</a>(&amp;self) -&gt; Self::<a class="type" href="../../rsx_shared/traits/style_traits/trait.TComputedStyles.html#associatedtype.BorderStyle" title="type rsx_shared::traits::style_traits::TComputedStyles::BorderStyle">BorderStyle</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_stylesheet/computed_styles/types.rs.html#186-188' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.border_top_width' class="method"><span id='border_top_width.v-1' class='invisible'><code>fn <a href='../../rsx_shared/traits/style_traits/trait.TComputedStyles.html#tymethod.border_top_width' class='fnname'>border_top_width</a>(&amp;self) -&gt; Self::<a class="type" href="../../rsx_shared/traits/style_traits/trait.TComputedStyles.html#associatedtype.BorderSize" title="type rsx_shared::traits::style_traits::TComputedStyles::BorderSize">BorderSize</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_stylesheet/computed_styles/types.rs.html#190-192' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.border_top_color' class="method"><span id='border_top_color.v-1' class='invisible'><code>fn <a href='../../rsx_shared/traits/style_traits/trait.TComputedStyles.html#tymethod.border_top_color' class='fnname'>border_top_color</a>(&amp;self) -&gt; Self::<a class="type" href="../../rsx_shared/traits/style_traits/trait.TComputedStyles.html#associatedtype.BorderColor" title="type rsx_shared::traits::style_traits::TComputedStyles::BorderColor">BorderColor</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_stylesheet/computed_styles/types.rs.html#194-196' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.border_top_style' class="method"><span id='border_top_style.v-1' class='invisible'><code>fn <a href='../../rsx_shared/traits/style_traits/trait.TComputedStyles.html#tymethod.border_top_style' class='fnname'>border_top_style</a>(&amp;self) -&gt; Self::<a class="type" href="../../rsx_shared/traits/style_traits/trait.TComputedStyles.html#associatedtype.BorderStyle" title="type rsx_shared::traits::style_traits::TComputedStyles::BorderStyle">BorderStyle</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_stylesheet/computed_styles/types.rs.html#198-200' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.box_shadows_copy' class="method"><span id='box_shadows_copy.v' class='invisible'><code>fn <a href='../../rsx_shared/traits/style_traits/trait.TComputedStyles.html#tymethod.box_shadows_copy' class='fnname'>box_shadows_copy</a>(&amp;self) -&gt; <a class="struct" href="https://doc.rust-lang.org/nightly/alloc/vec/struct.Vec.html" title="struct alloc::vec::Vec">Vec</a>&lt;Self::<a class="type" href="../../rsx_shared/traits/style_traits/trait.TComputedStyles.html#associatedtype.BoxShadow" title="type rsx_shared::traits::style_traits::TComputedStyles::BoxShadow">BoxShadow</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_stylesheet/computed_styles/types.rs.html#202-204' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.apply_rules' class="method"><span id='apply_rules.v' class='invisible'><code>fn <a href='../../rsx_shared/traits/style_traits/trait.TComputedStyles.html#method.apply_rules' class='fnname'>apply_rules</a>&lt;'a, I&gt;(&amp;mut self, iter: I) <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;I: <a class="trait" href="https://doc.rust-lang.org/nightly/core/iter/iterator/trait.Iterator.html" title="trait core::iter::iterator::Iterator">Iterator</a>&lt;Item = &amp;'a Self::<a class="type" href="../../rsx_shared/traits/style_traits/trait.TInheritedStyles.html#associatedtype.Styles" title="type rsx_shared::traits::style_traits::TInheritedStyles::Styles">Styles</a>&gt;,<br>&nbsp;&nbsp;&nbsp;&nbsp;Self::<a class="type" href="../../rsx_shared/traits/style_traits/trait.TInheritedStyles.html#associatedtype.Styles" title="type rsx_shared::traits::style_traits::TInheritedStyles::Styles">Styles</a>: 'a,&nbsp;</span></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_shared/traits/style_traits.rs.html#98-104' title='goto source code'>[src]</a></span></h4>
+</div><h3 id='impl-TInheritedStyles' class='impl'><span class='in-band'><code>impl <a class="trait" href="../../rsx_shared/traits/style_traits/trait.TInheritedStyles.html" title="trait rsx_shared::traits::style_traits::TInheritedStyles">TInheritedStyles</a> for <a class="struct" href="../../rsx_stylesheet/types/struct.ComputedStyles.html" title="struct rsx_stylesheet::types::ComputedStyles">ComputedStyles</a></code><a href='#impl-TInheritedStyles' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_stylesheet/computed_styles/types.rs.html#207-279' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='associatedtype.Styles' class="type"><span id='Styles.t' class='invisible'><code>type <a href='../../rsx_shared/traits/style_traits/trait.TInheritedStyles.html#associatedtype.Styles' class="type">Styles</a> = <a class="struct" href="../../rsx_stylesheet/types/struct.StyleDeclarations.html" title="struct rsx_stylesheet::types::StyleDeclarations">StyleDeclarations</a></code></span></h4>
+<h4 id='associatedtype.Cursor' class="type"><span id='Cursor.t' class='invisible'><code>type <a href='../../rsx_shared/traits/style_traits/trait.TInheritedStyles.html#associatedtype.Cursor' class="type">Cursor</a> = <a class="enum" href="../../rsx_stylesheet/types/enum.Cursor.html" title="enum rsx_stylesheet::types::Cursor">Cursor</a></code></span></h4>
+<h4 id='associatedtype.Color' class="type"><span id='Color.t' class='invisible'><code>type <a href='../../rsx_shared/traits/style_traits/trait.TInheritedStyles.html#associatedtype.Color' class="type">Color</a> = <a class="struct" href="../../rsx_stylesheet/types/struct.Color.html" title="struct rsx_stylesheet::types::Color">Color</a></code></span></h4>
+<h4 id='associatedtype.TextShadow' class="type"><span id='TextShadow.t' class='invisible'><code>type <a href='../../rsx_shared/traits/style_traits/trait.TInheritedStyles.html#associatedtype.TextShadow' class="type">TextShadow</a> = <a class="struct" href="../../rsx_stylesheet/types/struct.TextShadow.html" title="struct rsx_stylesheet::types::TextShadow">TextShadow</a></code></span></h4>
+<h4 id='associatedtype.FontName' class="type"><span id='FontName.t' class='invisible'><code>type <a href='../../rsx_shared/traits/style_traits/trait.TInheritedStyles.html#associatedtype.FontName' class="type">FontName</a> = <a class="enum" href="../../rsx_stylesheet/types/enum.FontName.html" title="enum rsx_stylesheet::types::FontName">FontName</a></code></span></h4>
+<h4 id='associatedtype.FontStyle' class="type"><span id='FontStyle.t' class='invisible'><code>type <a href='../../rsx_shared/traits/style_traits/trait.TInheritedStyles.html#associatedtype.FontStyle' class="type">FontStyle</a> = <a class="enum" href="../../rsx_stylesheet/types/enum.FontStyle.html" title="enum rsx_stylesheet::types::FontStyle">FontStyle</a></code></span></h4>
+<h4 id='associatedtype.FontCaps' class="type"><span id='FontCaps.t' class='invisible'><code>type <a href='../../rsx_shared/traits/style_traits/trait.TInheritedStyles.html#associatedtype.FontCaps' class="type">FontCaps</a> = <a class="enum" href="../../rsx_stylesheet/types/enum.FontCaps.html" title="enum rsx_stylesheet::types::FontCaps">FontCaps</a></code></span></h4>
+<h4 id='associatedtype.FontWeight' class="type"><span id='FontWeight.t' class='invisible'><code>type <a href='../../rsx_shared/traits/style_traits/trait.TInheritedStyles.html#associatedtype.FontWeight' class="type">FontWeight</a> = <a class="enum" href="../../rsx_stylesheet/types/enum.FontWeight.html" title="enum rsx_stylesheet::types::FontWeight">FontWeight</a></code></span></h4>
+<h4 id='associatedtype.FontSize' class="type"><span id='FontSize.t' class='invisible'><code>type <a href='../../rsx_shared/traits/style_traits/trait.TInheritedStyles.html#associatedtype.FontSize' class="type">FontSize</a> = <a class="enum" href="../../rsx_stylesheet/types/enum.FontSize.html" title="enum rsx_stylesheet::types::FontSize">FontSize</a></code></span></h4>
+<h4 id='associatedtype.FontStretch' class="type"><span id='FontStretch.t' class='invisible'><code>type <a href='../../rsx_shared/traits/style_traits/trait.TInheritedStyles.html#associatedtype.FontStretch' class="type">FontStretch</a> = <a class="enum" href="../../rsx_stylesheet/types/enum.FontStretch.html" title="enum rsx_stylesheet::types::FontStretch">FontStretch</a></code></span></h4>
+<h4 id='associatedtype.Visibility' class="type"><span id='Visibility.t' class='invisible'><code>type <a href='../../rsx_shared/traits/style_traits/trait.TInheritedStyles.html#associatedtype.Visibility' class="type">Visibility</a> = <a class="enum" href="../../rsx_stylesheet/types/enum.Visibility.html" title="enum rsx_stylesheet::types::Visibility">Visibility</a></code></span></h4>
+<h4 id='method.inherit_styles' class="method"><span id='inherit_styles.v' class='invisible'><code>fn <a href='../../rsx_shared/traits/style_traits/trait.TInheritedStyles.html#tymethod.inherit_styles' class='fnname'>inherit_styles</a>(&amp;mut self, other: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;</a>Self)</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_stylesheet/computed_styles/types.rs.html#220-231' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.cursor' class="method"><span id='cursor.v-1' class='invisible'><code>fn <a href='../../rsx_shared/traits/style_traits/trait.TInheritedStyles.html#tymethod.cursor' class='fnname'>cursor</a>(&amp;self) -&gt; Self::<a class="type" href="../../rsx_shared/traits/style_traits/trait.TInheritedStyles.html#associatedtype.Cursor" title="type rsx_shared::traits::style_traits::TInheritedStyles::Cursor">Cursor</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_stylesheet/computed_styles/types.rs.html#233-235' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.color' class="method"><span id='color.v-1' class='invisible'><code>fn <a href='../../rsx_shared/traits/style_traits/trait.TInheritedStyles.html#tymethod.color' class='fnname'>color</a>(&amp;self) -&gt; Self::<a class="type" href="../../rsx_shared/traits/style_traits/trait.TInheritedStyles.html#associatedtype.Color" title="type rsx_shared::traits::style_traits::TInheritedStyles::Color">Color</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_stylesheet/computed_styles/types.rs.html#237-239' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.text_shadows_copy' class="method"><span id='text_shadows_copy.v' class='invisible'><code>fn <a href='../../rsx_shared/traits/style_traits/trait.TInheritedStyles.html#tymethod.text_shadows_copy' class='fnname'>text_shadows_copy</a>(&amp;self) -&gt; <a class="struct" href="https://doc.rust-lang.org/nightly/alloc/vec/struct.Vec.html" title="struct alloc::vec::Vec">Vec</a>&lt;Self::<a class="type" href="../../rsx_shared/traits/style_traits/trait.TInheritedStyles.html#associatedtype.TextShadow" title="type rsx_shared::traits::style_traits::TInheritedStyles::TextShadow">TextShadow</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_stylesheet/computed_styles/types.rs.html#241-243' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.font_names_copy' class="method"><span id='font_names_copy.v' class='invisible'><code>fn <a href='../../rsx_shared/traits/style_traits/trait.TInheritedStyles.html#tymethod.font_names_copy' class='fnname'>font_names_copy</a>(&amp;self) -&gt; <a class="struct" href="https://doc.rust-lang.org/nightly/alloc/vec/struct.Vec.html" title="struct alloc::vec::Vec">Vec</a>&lt;Self::<a class="type" href="../../rsx_shared/traits/style_traits/trait.TInheritedStyles.html#associatedtype.FontName" title="type rsx_shared::traits::style_traits::TInheritedStyles::FontName">FontName</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_stylesheet/computed_styles/types.rs.html#245-247' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.font_style' class="method"><span id='font_style.v-1' class='invisible'><code>fn <a href='../../rsx_shared/traits/style_traits/trait.TInheritedStyles.html#tymethod.font_style' class='fnname'>font_style</a>(&amp;self) -&gt; Self::<a class="type" href="../../rsx_shared/traits/style_traits/trait.TInheritedStyles.html#associatedtype.FontStyle" title="type rsx_shared::traits::style_traits::TInheritedStyles::FontStyle">FontStyle</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_stylesheet/computed_styles/types.rs.html#249-251' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.font_caps' class="method"><span id='font_caps.v-1' class='invisible'><code>fn <a href='../../rsx_shared/traits/style_traits/trait.TInheritedStyles.html#tymethod.font_caps' class='fnname'>font_caps</a>(&amp;self) -&gt; Self::<a class="type" href="../../rsx_shared/traits/style_traits/trait.TInheritedStyles.html#associatedtype.FontCaps" title="type rsx_shared::traits::style_traits::TInheritedStyles::FontCaps">FontCaps</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_stylesheet/computed_styles/types.rs.html#253-255' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.font_weight' class="method"><span id='font_weight.v-1' class='invisible'><code>fn <a href='../../rsx_shared/traits/style_traits/trait.TInheritedStyles.html#tymethod.font_weight' class='fnname'>font_weight</a>(&amp;self) -&gt; Self::<a class="type" href="../../rsx_shared/traits/style_traits/trait.TInheritedStyles.html#associatedtype.FontWeight" title="type rsx_shared::traits::style_traits::TInheritedStyles::FontWeight">FontWeight</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_stylesheet/computed_styles/types.rs.html#257-259' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.font_size' class="method"><span id='font_size.v-1' class='invisible'><code>fn <a href='../../rsx_shared/traits/style_traits/trait.TInheritedStyles.html#tymethod.font_size' class='fnname'>font_size</a>(&amp;self) -&gt; Self::<a class="type" href="../../rsx_shared/traits/style_traits/trait.TInheritedStyles.html#associatedtype.FontSize" title="type rsx_shared::traits::style_traits::TInheritedStyles::FontSize">FontSize</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_stylesheet/computed_styles/types.rs.html#261-263' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.font_stretch' class="method"><span id='font_stretch.v-1' class='invisible'><code>fn <a href='../../rsx_shared/traits/style_traits/trait.TInheritedStyles.html#tymethod.font_stretch' class='fnname'>font_stretch</a>(&amp;self) -&gt; Self::<a class="type" href="../../rsx_shared/traits/style_traits/trait.TInheritedStyles.html#associatedtype.FontStretch" title="type rsx_shared::traits::style_traits::TInheritedStyles::FontStretch">FontStretch</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_stylesheet/computed_styles/types.rs.html#265-267' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.visibility' class="method"><span id='visibility.v-1' class='invisible'><code>fn <a href='../../rsx_shared/traits/style_traits/trait.TInheritedStyles.html#tymethod.visibility' class='fnname'>visibility</a>(&amp;self) -&gt; Self::<a class="type" href="../../rsx_shared/traits/style_traits/trait.TInheritedStyles.html#associatedtype.Visibility" title="type rsx_shared::traits::style_traits::TInheritedStyles::Visibility">Visibility</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_stylesheet/computed_styles/types.rs.html#269-271' title='goto source code'>[src]</a></span></h4>
+<h4 id='method.find_font' class="method"><span id='find_font.v' class='invisible'><code>fn <a href='../../rsx_shared/traits/style_traits/trait.TInheritedStyles.html#tymethod.find_font' class='fnname'>find_font</a>&lt;F, O&gt;(&amp;self, predicate: F) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;O&gt; <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;F: <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/function/trait.FnMut.html" title="trait core::ops::function::FnMut">FnMut</a>(&amp;Self::<a class="type" href="../../rsx_shared/traits/style_traits/trait.TInheritedStyles.html#associatedtype.FontName" title="type rsx_shared::traits::style_traits::TInheritedStyles::FontName">FontName</a>) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/option/enum.Option.html" title="enum core::option::Option">Option</a>&lt;O&gt;,&nbsp;</span></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rsx_stylesheet/computed_styles/types.rs.html#273-278' title='goto source code'>[src]</a></span></h4>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>↑</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>↓</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>↹</dt>
+                    <dd>Switch tab</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt style="width:31px;">+ / -</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "rsx_stylesheet";
+    </script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>
